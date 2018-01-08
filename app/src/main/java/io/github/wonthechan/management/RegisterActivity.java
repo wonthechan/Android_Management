@@ -57,8 +57,9 @@ public class RegisterActivity extends AppCompatActivity {
                                             @Override
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 // 4. 확인버튼을 누르면 LoginActivity 화면으로 전환된다.
-                                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                                                RegisterActivity.this.startActivity(intent);
+                                                //Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                                //RegisterActivity.this.startActivity(intent);
+                                                finish();
                                             }
                                         })
                                         .create()

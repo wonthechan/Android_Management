@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-            target = "http://yourDomain/List.php";
+            target = "http://211.252.53.222/List.php";
         }
 
         @Override
