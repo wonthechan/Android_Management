@@ -8,6 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:background="@color/colorPrimary"
     tools:context="io.github.wonthechan.management.MainActivity">
 
     <TextView
@@ -22,27 +23,32 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="@+id/welcomeMessage"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentRight="@+id/welcomeMessage"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/welcomeMessage"
-        android:text="아이디"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_main"
+        android:gravity="center"
+        android:text="Your ID"
+        android:textColor="@color/colorWhite" />
 
     <TextView
         android:id="@+id/idText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="@+id/textView2"
+        android:layout_alignParentEnd="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -50,19 +56,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/idText"
-        android:text="비밀번호"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        android:text="Your Password"
+        android:background="@drawable/textview_main"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="@+id/textView4"
+        android:layout_alignParentEnd="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView4"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"/>
 
     <Button
         android:id="@+id/managementButton"
@@ -70,5 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordText"
         android:layout_centerHorizontal="true"
-        android:text="회원관리" />
+        android:text="회원관리"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_login"/>
 </RelativeLayout>
