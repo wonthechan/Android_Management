@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class DeleteRequest extends StringRequest {
 
-    final static private String URL = "http://211.252.53.222/Delete.php";
+    final static private String URL = "http://yourDomain/Delete.php";
     private Map<String, String> parameters;
 
     public DeleteRequest(String userID, Response.Listener<String> listener){
